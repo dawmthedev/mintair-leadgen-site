@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/mintair-leadgen-site/static/css/main.617542da.css",
-    "main.js": "/mintair-leadgen-site/static/js/main.1af25211.js",
+    "main.js": "/mintair-leadgen-site/static/js/main.e8d43738.js",
     "index.html": "/mintair-leadgen-site/index.html",
     "main.617542da.css.map": "/mintair-leadgen-site/static/css/main.617542da.css.map",
-    "main.1af25211.js.map": "/mintair-leadgen-site/static/js/main.1af25211.js.map"
+    "main.e8d43738.js.map": "/mintair-leadgen-site/static/js/main.e8d43738.js.map"
   },
   "entrypoints": [
     "static/css/main.617542da.css",
-    "static/js/main.1af25211.js"
+    "static/js/main.e8d43738.js"
   ]
 }
