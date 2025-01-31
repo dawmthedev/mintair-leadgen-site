@@ -24,27 +24,27 @@ export default function Header() {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md" : "bg-white"
+        isScrolled ? "bg-white shadow-lg" : "bg-white"
       }`}
     >
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
-        <div className="flex w-full items-center justify-between py-4 sm:py-6">
-          <Link to="/" className="text-xl sm:text-2xl font-bold">
+      <nav className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10" aria-label="Top">
+        <div className="flex w-full items-center justify-between py-3 sm:py-7">
+          <Link to="/" className="text-2xl sm:text-3xl font-bold">
             <img
-              src="/assets/logo.png"
+              src="/assets/logo.webp"
               alt="Mintair Logo"
-              className="h-10 sm:h-12"
+              className="h-14 sm:h-24" // Increased from sm:h-20 to sm:h-24 (20% increase)
             />
           </Link>
 
           {/* Hamburger Menu Button */}
           <button
-            className="lg:hidden p-2"
+            className="lg:hidden p-2 sm:p-3"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >
             <svg
-              className="h-6 w-6 text-gray-600"
+              className="h-5 w-5 sm:h-7 sm:w-7 text-gray-600"
               fill="none"
               strokeLinecap="round"
               strokeLinejoin="round"
@@ -61,12 +61,12 @@ export default function Header() {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-x-8">
+          <div className="hidden lg:flex items-center gap-x-10">
             {navLinks.map(([title, path]) => (
               <Link
                 key={path}
                 to={path}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-base font-medium transition-colors ${
                   location.pathname === path
                     ? "text-primary-600"
                     : "text-gray-600 hover:text-primary-600"
@@ -77,7 +77,7 @@ export default function Header() {
             ))}
             <Link
               to="/contact"
-              className="rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-primary transition-all"
+              className="rounded-full bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-primary transition-all"
             >
               Contact
             </Link>
@@ -88,14 +88,14 @@ export default function Header() {
         <div
           className={`lg:hidden ${
             isMobileMenuOpen ? "block" : "hidden"
-          } py-4 space-y-4`}
+          } py-3 sm:py-5 space-y-3 sm:space-y-5`}
         >
           {navLinks.map(([title, path]) => (
             <Link
               key={path}
               to={path}
               onClick={() => setIsMobileMenuOpen(false)}
-              className={`block text-base font-medium transition-colors ${
+              className={`block text-base sm:text-lg font-medium transition-colors ${
                 location.pathname === path
                   ? "text-primary-600"
                   : "text-gray-600 hover:text-primary-600"
@@ -107,7 +107,7 @@ export default function Header() {
           <Link
             to="/contact"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="block w-full text-center rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-white shadow-sm hover:bg-primary transition-all"
+            className="block w-full text-center rounded-full bg-primary px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base font-medium text-white shadow-sm hover:bg-primary transition-all"
           >
             Contact
           </Link>

@@ -9,6 +9,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import { AnimatePresence } from "framer-motion";
+import ServiceDetail from "./pages/services/[serviceId]";
 
 function App() {
   const location = useLocation();
@@ -24,6 +25,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/services" element={<Services />} />
+            <Route path="/services/:id" element={<ServiceDetail />} />{" "}
           </Routes>
         </AnimatePresence>
       </div>

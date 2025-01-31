@@ -1,5 +1,5 @@
 // src/pages/Services.jsx
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import LeadCaptureForm from "../components/LeadCaptureform";
 
@@ -44,11 +44,11 @@ export default function Services() {
       link: "/services/plumbing",
     },
     {
-      title: "Drain & Sewer",
+      title: "Heat Pump Solutions",
       description:
-        "Expert drain cleaning and sewer line services to keep your system flowing smoothly.",
-      icon: "🚰",
-      link: "/services/drain-sewer",
+        "Energy-efficient heating and cooling for year-round comfort.",
+      icon: "🌡️",
+      link: "/services/heat-pump",
     },
     {
       title: "Insulation",
@@ -66,15 +66,137 @@ export default function Services() {
     },
   ];
 
-  const reviews = [
+  const [reviews, setReviews] = useState([
     {
-      author: "Sarah M.",
+      name: "John D.",
       rating: 5,
-      text: "Exceptional service! The team was professional, punctual, and thorough.",
-      date: "2 days ago",
+      review:
+        "Outstanding service! They were professional, efficient, and solved our AC issues quickly.",
+      pfp: "https://randomuser.me/api/portraits/men/1.jpg",
     },
-    // Add more reviews...
-  ];
+    {
+      name: "Sarah M.",
+      rating: 5,
+      review: "Great experience! Very knowledgeable team and fair pricing.",
+      pfp: "https://randomuser.me/api/portraits/women/1.jpg",
+    },
+    {
+      name: "Mike R.",
+      rating: 5,
+      review: "Excellent service from start to finish. Highly recommend!",
+      pfp: "https://randomuser.me/api/portraits/men/2.jpg",
+    },
+    {
+      name: "Emily W.",
+      rating: 5,
+      review:
+        "They installed our new HVAC system perfectly. Very happy with the results!",
+      pfp: "https://randomuser.me/api/portraits/women/2.jpg",
+    },
+    {
+      name: "David P.",
+      rating: 5,
+      review: "Fast response time and quality work. Would use again!",
+      pfp: "https://randomuser.me/api/portraits/men/3.jpg",
+    },
+    {
+      name: "Lisa K.",
+      rating: 5,
+      review: "Very professional team. They explained everything clearly.",
+      pfp: "https://randomuser.me/api/portraits/women/3.jpg",
+    },
+    {
+      name: "James H.",
+      rating: 5,
+      review: "Reliable and efficient service. Great attention to detail.",
+      pfp: "https://randomuser.me/api/portraits/men/4.jpg",
+    },
+    {
+      name: "Amy B.",
+      rating: 5,
+      review: "Excellent customer service and workmanship. Very satisfied!",
+      pfp: "https://randomuser.me/api/portraits/women/4.jpg",
+    },
+    {
+      name: "Robert M.",
+      rating: 5,
+      review: "Professional installation and great follow-up service.",
+      pfp: "https://randomuser.me/api/portraits/men/5.jpg",
+    },
+    {
+      name: "Jennifer L.",
+      rating: 5,
+      review: "They went above and beyond my expectations. Highly recommend!",
+      pfp: "https://randomuser.me/api/portraits/women/5.jpg",
+    },
+    {
+      name: "William T.",
+      rating: 5,
+      review: "Expert technicians who know their stuff. Fair prices too!",
+      pfp: "https://randomuser.me/api/portraits/men/6.jpg",
+    },
+    {
+      name: "Karen S.",
+      rating: 5,
+      review: "Prompt, professional, and courteous service every time.",
+      pfp: "https://randomuser.me/api/portraits/women/6.jpg",
+    },
+    {
+      name: "Thomas R.",
+      rating: 5,
+      review: "Best HVAC service in the area. Won't go anywhere else!",
+      pfp: "https://randomuser.me/api/portraits/men/7.jpg",
+    },
+    {
+      name: "Patricia N.",
+      rating: 5,
+      review: "Fantastic work ethic and great results. Thank you!",
+      pfp: "https://randomuser.me/api/portraits/women/7.jpg",
+    },
+    {
+      name: "George C.",
+      rating: 5,
+      review: "Very impressed with their knowledge and professionalism.",
+      pfp: "https://randomuser.me/api/portraits/men/8.jpg",
+    },
+    {
+      name: "Susan D.",
+      rating: 5,
+      review: "Excellent service and communication throughout the process.",
+      pfp: "https://randomuser.me/api/portraits/women/8.jpg",
+    },
+    {
+      name: "Richard B.",
+      rating: 5,
+      review: "Quality work at reasonable prices. Very happy customer!",
+      pfp: "https://randomuser.me/api/portraits/men/9.jpg",
+    },
+    {
+      name: "Linda W.",
+      rating: 5,
+      review: "They made the whole process easy and stress-free.",
+      pfp: "https://randomuser.me/api/portraits/women/9.jpg",
+    },
+    {
+      name: "Charles M.",
+      rating: 5,
+      review: "Trustworthy and reliable. Always deliver great results.",
+      pfp: "https://randomuser.me/api/portraits/men/10.jpg",
+    },
+    {
+      name: "Mary J.",
+      rating: 5,
+      review: "Outstanding customer service and technical expertise.",
+      pfp: "https://randomuser.me/api/portraits/women/10.jpg",
+    },
+    {
+      name: "Michael S.",
+      rating: 5,
+      review:
+        "Excellent energy-efficient solutions and top-notch installation.",
+      pfp: "https://randomuser.me/api/portraits/men/11.jpg",
+    },
+  ]);
 
   return (
     <div className="bg-white">
@@ -83,7 +205,7 @@ export default function Services() {
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-blue-100/20" />
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl pt-10">
               Complete HVAC & Home Services
             </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -119,12 +241,14 @@ export default function Services() {
           <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-4">
             {blueServices.map((service) => (
               <Link key={service.title} to={service.link} className="group">
-                <div className="relative rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200 hover:shadow-lg hover:ring-blue-500 transition-all duration-300">
+                <div className="relative rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200 hover:shadow-lg hover:ring-blue-500 transition-all duration-300 h-[280px] flex flex-col">
                   <span className="text-4xl mb-4 block">{service.icon}</span>
                   <h3 className="text-xl font-semibold text-blue-600 group-hover:text-blue-500">
                     {service.title}
                   </h3>
-                  <p className="mt-4 text-gray-600">{service.description}</p>
+                  <p className="mt-4 text-gray-600 flex-grow">
+                    {service.description}
+                  </p>
                 </div>
               </Link>
             ))}
@@ -222,30 +346,34 @@ export default function Services() {
               What Our Customers Say
             </h2>
           </div>
-          <div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {reviews.map((review, index) => (
               <div
                 key={index}
-                className="flex flex-col bg-white p-6 rounded-2xl shadow-sm"
+                className="bg-white p-6 rounded-lg shadow-lg border border-gray-200"
               >
-                <div className="flex items-center gap-x-2 text-yellow-400">
-                  {[...Array(review.rating)].map((_, i) => (
-                    <svg
-                      key={i}
-                      className="h-5 w-5 fill-current"
-                      viewBox="0 0 20 20"
-                    >
-                      <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                    </svg>
-                  ))}
+                <div className="flex items-center mb-4">
+                  <img
+                    src={review.pfp}
+                    alt={`${review.name}'s profile`}
+                    className="w-10 h-10 rounded-full mr-4"
+                  />
+                  <div className="flex text-yellow-400">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <svg
+                        key={i}
+                        className="w-5 h-5"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                      </svg>
+                    ))}
+                  </div>
+                  <p className="ml-2 text-gray-600">{review.rating}.0</p>
                 </div>
-                <p className="mt-4 text-gray-600">{review.text}</p>
-                <div className="mt-4 flex items-center justify-between text-sm">
-                  <span className="font-semibold text-gray-900">
-                    {review.author}
-                  </span>
-                  <span className="text-gray-500">{review.date}</span>
-                </div>
+                <p className="text-gray-600 mb-4">"{review.review}"</p>
+                <p className="font-semibold">- {review.name}</p>
               </div>
             ))}
           </div>

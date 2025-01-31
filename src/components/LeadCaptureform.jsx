@@ -1,5 +1,6 @@
 // src/components/LeadCaptureForm.jsx
 import React, { useState } from "react";
+import { toast } from "react-hot-toast";
 
 export default function LeadCaptureForm({ className = "" }) {
   const [status, setStatus] = useState("idle");
@@ -7,17 +8,20 @@ export default function LeadCaptureForm({ className = "" }) {
     firstName: "",
     lastName: "",
     email: "",
-    phone: "",
     message: "",
-    source: window.location.pathname,
   });
+
+  const API_URL =
+    process.env.NODE_ENV === "development"
+      ? "http://localhost:3001/api/contact"
+      : "https://mintmainbackend.vercel.app/api/contact";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus("loading");
 
     try {
-      const response = await fetch("/api/leads", {
+      const response = await fetch(API_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -25,15 +29,18 @@ export default function LeadCaptureForm({ className = "" }) {
 
       if (!response.ok) throw new Error("Submission failed");
 
+      toast.success("Message sent successfully!");
       setStatus("success");
       setFormData({
         firstName: "",
         lastName: "",
         email: "",
-        phone: "",
+        // phone: "",
         message: "",
+        // source: window.location.pathname,
       });
     } catch (error) {
+      toast.error("An error occurred. Please try again.");
       setStatus("error");
     }
   };
