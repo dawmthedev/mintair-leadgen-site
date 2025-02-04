@@ -6,13 +6,14 @@ export default function Contact() {
     firstName: "",
     lastName: "",
     email: "",
+    phone: "",
     message: "",
   });
 
   const API_URL =
     process.env.NODE_ENV === "development"
       ? "http://localhost:3001/api/contact"
-      : "https://mintmainbackend.vercel.app/api/contact";
+      : "https://voltaicqbapi.herokuapp.com/mintUser";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -26,7 +27,13 @@ export default function Contact() {
       });
       if (response.ok) {
         toast.success("Message sent successfully!");
-        setFormData({ firstName: "", lastName: "", email: "", message: "" });
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          message: "",
+          phone: "",
+        });
       } else {
         toast.error("Failed to send message.");
       }

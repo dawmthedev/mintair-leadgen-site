@@ -202,7 +202,7 @@ export default function Home() {
           <div className="relative h-screen mb-12">
             <div className="absolute inset-0">
               <img
-                src="/assets/hvacimage.webp"
+                src="/assets/banner.png"
                 alt="HVAC Professional Service"
                 className="w-full h-full object-cover"
               />
@@ -292,7 +292,7 @@ export default function Home() {
               <div
                 className="absolute inset-0 md:bg-fixed"
                 style={{
-                  backgroundImage: 'url("/assets/banner.png")',
+                  backgroundImage: 'url("/assets/hvacimage.webp")',
 
                   backgroundSize: "cover",
                   backgroundPosition: "center",
