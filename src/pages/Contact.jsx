@@ -132,10 +132,19 @@ export default function Contact() {
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+            className="block w-full rounded-md bg-primary px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600"
           >
-            Send message
+            Get a free consultaion
           </button>
+
+          <p className="mt-4 text-sm text-gray-500">
+            By clicking "Submit", I consent to join the email list and receive
+            SMS from Voltaic LLC, with access to our latest offers and services.
+            Message and data rates may apply. Message frequency varies. More
+            details can be found in our Privacy Policy and Terms and Conditions.
+            Text "HELP" for help or contact us at info@voltaicnow.com. Text
+            "STOP" to cancel.
+          </p>
         </div>
       </form>
     </div>

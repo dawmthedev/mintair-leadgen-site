@@ -13,13 +13,16 @@ export default function About() {
         </div>
         <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8">
           <div className="mx-auto max-w-2xl lg:max-w-4xl">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl text-center pt-10">
-              California's Trusted HVAC Experts
+            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-8 bg-clip-text text-transparent bg-gradient-to-b from-primary to-[#1D354C] mt-20">
+              Keeping California Cool, Keeping It Classic.
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600 text-center">
-              Since 2010, we've been delivering premium heating and cooling
-              solutions to homeowners across California, combining technical
-              expertise with exceptional customer service.
+            <p className="text-lg leading-8 text-gray-600 mb-12">
+              At Mint, we blend modern efficiency with old-school reliability to
+              keep your home and business perfectly comfortable—year-round.
+              Inspired by a time when service meant something, we show up on
+              time, do the job right, and leave things fresher than we found
+              them. From the summer heat to coastal chills, Mint is your go-to
+              for crisp, clean air and effortless comfort.
             </p>
           </div>
         </div>
@@ -36,7 +39,7 @@ export default function About() {
               { number: "24/7", label: "Emergency Service" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
-                <div className="text-4xl font-bold tracking-tight text-blue-600">
+                <div className="text-4xl font-bold tracking-tight text-[#1D354C]-600">
                   {stat.number}
                 </div>
                 <div className="mt-2 text-base font-semibold text-gray-600">
@@ -60,7 +63,7 @@ export default function About() {
               <div className="text-center">
                 <div className="inline-block p-3 rounded-full bg-blue-50 mb-4">
                   <svg
-                    className="w-8 h-8 text-blue-600"
+                    className="w-8 h-8 text-[#1D354C]-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -85,7 +88,7 @@ export default function About() {
               <div className="text-center">
                 <div className="inline-block p-3 rounded-full bg-blue-50 mb-4">
                   <svg
-                    className="w-8 h-8 text-blue-600"
+                    className="w-8 h-8 text-[#1D354C]-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -104,9 +107,9 @@ export default function About() {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg border border-gray-200">
               <div className="text-center">
-                <div className="inline-block p-3 rounded-full bg-blue-50 mb-4">
+                <div className="inline-block p-3 rounded-full bg-[#1D354C]-50 mb-4">
                   <svg
-                    className="w-8 h-8 text-blue-600"
+                    className="w-8 h-8 text-[#1D354C]-600"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -174,17 +177,17 @@ export default function About() {
                     strokeWidth="3"
                   />
                   {/* County markers */}
-                  <circle cx="150" cy="100" r="10" fill="#2563eb" />
+                  <circle cx="150" cy="100" r="10" fill="#1D354C" />
                   <text x="170" y="105" className="text-sm" fill="#1e40af">
                     Los Angeles
                   </text>
 
-                  <circle cx="180" cy="150" r="10" fill="#2563eb" />
+                  <circle cx="180" cy="150" r="10" fill="#1D354C" />
                   <text x="200" y="155" className="text-sm" fill="#1e40af">
                     Orange County
                   </text>
 
-                  <circle cx="200" cy="200" r="10" fill="#2563eb" />
+                  <circle cx="200" cy="200" r="10" fill="#1D354C" />
                   <text x="220" y="205" className="text-sm" fill="#1e40af">
                     San Diego
                   </text>
@@ -194,13 +197,13 @@ export default function About() {
                     x="60"
                     y="280"
                     className="text-lg font-bold"
-                    fill="#2563eb"
+                    fill="#1D354C"
                   >
                     Pacific Ocean 🌊
                   </text>
                 </svg>
               </div>
-              <div className="absolute -right-6 -top-6 bg-blue-600 text-white p-3 rounded-full shadow-lg">
+              <div className="absolute -right-6 -top-6 bg-[#1D354C]-600 text-white p-3 rounded-full shadow-lg">
                 <span className="text-2xl">🚀</span>
               </div>
             </div>

@@ -211,12 +211,16 @@ export default function Home() {
             <div className="relative max-w-7xl mx-auto px-6 py-32 flex items-center min-h-screen">
               <div className="max-w-2xl text-white">
                 <h1 className="text-5xl font-bold tracking-tight sm:text-6xl mb-6">
-                  California's Premier HVAC Services
+                  Keeping California Cool, Keeping It Classic
                 </h1>
                 <p className="text-xl text-gray-100 mb-8">
-                  Experience top-tier heating and cooling solutions with our
-                  expert team. We deliver comfort, efficiency, and reliability
-                  to every home.
+                  At Mint, we blend modern efficiency with old-school
+                  reliability to keep your home and business perfectly
+                  comfortable—year-round. Inspired by a time when service meant
+                  something, we show up on time, do the job right, and leave
+                  things fresher than we found them. From the summer heat to
+                  coastal chills, Mint is your go-to for crisp, clean air and
+                  effortless comfort.
                 </p>
                 <Link
                   to="/contact"
@@ -289,6 +293,7 @@ export default function Home() {
                 className="absolute inset-0 md:bg-fixed"
                 style={{
                   backgroundImage: 'url("/assets/banner.png")',
+
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                   backgroundAttachment: "scroll",

@@ -222,9 +222,9 @@ export default function Services() {
           <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-4">
             {redServices.map((service) => (
               <Link key={service.title} to={service.link} className="group">
-                <div className="relative rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200 hover:shadow-lg hover:ring-red-500 transition-all duration-300">
+                <div className="relative rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200 hover:shadow-lg hover:ring-primary-200 transition-all duration-300">
                   <span className="text-4xl mb-4 block">{service.icon}</span>
-                  <h3 className="text-xl font-semibold text-red-600 group-hover:text-red-500">
+                  <h3 className="text-xl font-semibold text-primary-600 group-hover:text-primary-500">
                     {service.title}
                   </h3>
                   <p className="mt-4 text-gray-600">{service.description}</p>
@@ -241,9 +241,9 @@ export default function Services() {
           <div className="grid grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:grid-cols-4">
             {blueServices.map((service) => (
               <Link key={service.title} to={service.link} className="group">
-                <div className="relative rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200 hover:shadow-lg hover:ring-blue-500 transition-all duration-300 h-[280px] flex flex-col">
+                <div className="relative rounded-2xl bg-white p-8 shadow-sm ring-1 ring-gray-200 hover:shadow-lg hover:ring-primary-500 transition-all duration-300 h-[280px] flex flex-col">
                   <span className="text-4xl mb-4 block">{service.icon}</span>
-                  <h3 className="text-xl font-semibold text-blue-600 group-hover:text-blue-500">
+                  <h3 className="text-xl font-semibold text-primary-600 group-hover:text-primary-500">
                     {service.title}
                   </h3>
                   <p className="mt-4 text-gray-600 flex-grow">
@@ -262,7 +262,7 @@ export default function Services() {
           <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-3 lg:gap-x-12">
             <div className="relative pl-16">
               <dt className="text-base font-semibold leading-7 text-gray-900">
-                <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600">
+                <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary-600">
                   <svg
                     className="h-6 w-6 text-white"
                     fill="none"
@@ -287,7 +287,7 @@ export default function Services() {
 
             <div className="relative pl-16">
               <dt className="text-base font-semibold leading-7 text-gray-900">
-                <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600">
+                <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-primary-600">
                   <svg
                     className="h-6 w-6 text-white"
                     fill="none"
@@ -312,7 +312,7 @@ export default function Services() {
 
             <div className="relative pl-16">
               <dt className="text-base font-semibold leading-7 text-gray-900">
-                <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600">
+                <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-bprimarylue-600">
                   <svg
                     className="h-6 w-6 text-white"
                     fill="none"

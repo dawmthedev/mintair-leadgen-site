@@ -16,11 +16,19 @@ export default function Footer() {
                 className="w-48 h-auto object-contain"
               />
             </Link>
-            <div className="text-gray-500 space-y-1">
+            <div className="text-gray-500 space-y-2 text-left">
               <p className="text-base">
                 Expert HVAC solutions for California homeowners.
               </p>
               <p className="text-base">CSLB #1096383</p>
+              <p>
+                <a
+                  href="tel:8776468658"
+                  className="text-primary-500 hover:underline"
+                >
+                  Call Now: 877-646-8658
+                </a>
+              </p>
             </div>
           </div>
 
@@ -68,22 +76,6 @@ export default function Footer() {
                     className="text-base text-gray-600 transition-colors hover:text-gray-900"
                   >
                     Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/blog"
-                    className="text-base text-gray-600 transition-colors hover:text-gray-900"
-                  >
-                    Blog
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/faq"
-                    className="text-base text-gray-600 transition-colors hover:text-gray-900"
-                  >
-                    FAQ
                   </Link>
                 </li>
               </ul>

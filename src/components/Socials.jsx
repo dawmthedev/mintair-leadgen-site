@@ -52,32 +52,11 @@ const Socials = () => {
   return (
     <SocialContainer>
       <SocialButton
-        href="https://twitter.com/yourhandle"
-        target="_blank"
-        className="twitter"
-      >
-        <FaTwitter />
-      </SocialButton>
-      <SocialButton
-        href="https://instagram.com/voltaicenergy"
+        href="https://instagram.com/mintair.co"
         target="_blank"
         className="instagram"
       >
         <FaInstagram />
-      </SocialButton>
-      <SocialButton
-        href="https://linkedin.com/in/yourhandle"
-        target="_blank"
-        className="linkedin"
-      >
-        <FaLinkedin />
-      </SocialButton>
-      <SocialButton
-        href="https://youtube.com/c/yourhandle"
-        target="_blank"
-        className="youtube"
-      >
-        <FaYoutube />
       </SocialButton>
     </SocialContainer>
   );

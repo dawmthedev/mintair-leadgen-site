@@ -100,9 +100,9 @@ export default function LeadCaptureForm({ className = "" }) {
         <button
           type="submit"
           disabled={status === "loading"}
-          className="rounded-lg bg-blue-600 px-8 py-4 font-semibold text-white transition-colors hover:bg-blue-500 disabled:opacity-50"
+          className="rounded-lg bg-gray-800 px-8 py-4 font-semibold text-white transition-colors hover:bg-[#1D354C]-500 disabled:opacity-50"
         >
-          {status === "loading" ? "Sending..." : "Get Free Consultation"}
+          {status === "loading" ? "Sending..." : "Get a Free Consultation"}
         </button>
       </form>
     </div>
