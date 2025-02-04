@@ -9,12 +9,13 @@ export default function LeadCaptureForm({ className = "" }) {
     lastName: "",
     email: "",
     message: "",
+    phone: "",
   });
 
   const API_URL =
     process.env.NODE_ENV === "development"
       ? "http://localhost:3001/api/contact"
-      : "https://mintmainbackend.vercel.app/api/contact";
+      : "https://voltaicqbapi.herokuapp.com/mintUser";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -35,7 +36,7 @@ export default function LeadCaptureForm({ className = "" }) {
         firstName: "",
         lastName: "",
         email: "",
-        // phone: "",
+        phone: "",
         message: "",
         // source: window.location.pathname,
       });
@@ -79,6 +80,14 @@ export default function LeadCaptureForm({ className = "" }) {
           required
           className="rounded-lg border-gray-200 p-3"
           value={formData.email}
+          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+        />
+        <input
+          type="phone"
+          placeholder="Phone"
+          required
+          className="rounded-lg border-gray-200 p-3"
+          value={formData.phone}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         />
         <input
