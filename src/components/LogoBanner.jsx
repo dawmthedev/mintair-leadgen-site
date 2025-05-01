@@ -46,12 +46,10 @@ const Gradient = styled.div`
 
   &.left {
     left: 0;
-    background: linear-gradient(90deg, white, transparent);
   }
 
   &.right {
     right: 0;
-    background: linear-gradient(-90deg, white, transparent);
   }
 `;
 

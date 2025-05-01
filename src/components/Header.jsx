@@ -30,7 +30,7 @@ export default function Header() {
         <div className="flex w-full items-center justify-between py-3 sm:py-7">
           <Link to="/" className="text-2xl sm:text-3xl font-bold">
             <img
-              src="/assets/logo.webp"
+              src="/assets/footer2.webp"
               alt="Mintair Logo"
               className="h-14 sm:h-24" // Increased from sm:h-20 to sm:h-24 (20% increase)
             />

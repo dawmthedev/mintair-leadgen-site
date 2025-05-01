@@ -15,11 +15,11 @@ export default function LeadCaptureForm({ className = "" }) {
   const API_URL =
     process.env.NODE_ENV === "development"
       ? "http://localhost:3001/api/contact"
-      : "https://voltaicqbapi.herokuapp.com/mintUser";
+      : "https://mintbackendfinal.vercel.app/api/contactr";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus("loading");
+    setStatus("loading") 
 
     try {
       const response = await fetch(API_URL, {
