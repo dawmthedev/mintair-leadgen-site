@@ -4,6 +4,7 @@ import LogoBanner from "../components/LogoBanner";
 import { motion } from "framer-motion";
 import Socials from "../components/Socials";
 import ReviewCarousel from "../components/ReviewCarousel";
+import MeetTheTeam from "../components/Members";
 
 export default function Home() {
   const services = [
@@ -372,6 +373,8 @@ export default function Home() {
 
             <ReviewCarousel />
             {/* Final Call to action to forward to the contact page. Make this absolutely amazing.  */}
+
+            <MeetTheTeam />
             {/* Socials */}
             <Socials />
           </div>
