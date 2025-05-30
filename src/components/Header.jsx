@@ -27,12 +27,12 @@ export default function Header() {
       }`}
     >
       <nav className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10" aria-label="Top">
-        <div className="flex w-full items-center justify-between py-3 sm:py-7">
+        <div className="flex w-full items-center justify-between py-2 sm:py-4">
           <Link to="/" className="text-2xl sm:text-3xl font-bold">
             <img
               src="/assets/footer2.webp"
               alt="Mintair Logo"
-              className="h-14 sm:h-24" // Increased from sm:h-20 to sm:h-24 (20% increase)
+              className="h-8 sm:h-12"
             />
           </Link>
 
@@ -60,7 +60,7 @@ export default function Header() {
           </button>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-x-10">
+          <div className="hidden lg:flex items-center gap-x-8">
             {navLinks.map(([title, path]) => (
               <Link
                 key={path}
@@ -76,7 +76,7 @@ export default function Header() {
             ))}
             <Link
               to="/contact"
-              className="rounded-full bg-primary px-6 py-3 text-base font-medium text-white shadow-sm hover:bg-primary transition-all"
+              className="rounded-full bg-primary px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-primary transition-all"
             >
               Contact
             </Link>
@@ -87,7 +87,7 @@ export default function Header() {
         <div
           className={`lg:hidden ${
             isMobileMenuOpen ? "block" : "hidden"
-          } py-3 sm:py-5 space-y-3 sm:space-y-5`}
+          } py-2 sm:py-3 space-y-2 sm:space-y-3`}
         >
           {navLinks.map(([title, path]) => (
             <Link

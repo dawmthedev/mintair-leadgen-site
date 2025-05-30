@@ -10,6 +10,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import ServiceDetail from "./pages/services/[serviceId]";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const siteId = 5304391;
 const hotjarVersion = 6;
@@ -28,13 +29,14 @@ function App() {
       <Header />
       <div className="relative">
         <AnimatePresence mode="wait" initial={false}>
-          <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/services/:id" element={<ServiceDetail />} />
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/about" element={<About />} />
+            <Route exact path="/blog" element={<Blog />} />
+            <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/services" element={<Services />} />
+            <Route exact path="/services/:id" element={<ServiceDetail />} />
+            <Route exact path="/privacy-policy" element={<PrivacyPolicy />} />
           </Routes>
         </AnimatePresence>
       </div>
