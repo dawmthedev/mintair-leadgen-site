@@ -4,8 +4,30 @@
     <meta charset="utf-8" />
     <title>Redirecting...</title>
     <script>
-      sessionStorage.redirect = location.pathname;
-      location.href = "/";
+      (function () {
+        // Get both pathname and hash
+        let path = location.pathname;
+        let hash = location.hash;
+
+        // Handle direct path without hash
+        if (path.includes("privacy-policy")) {
+          sessionStorage.redirect = "/privacy-policy";
+        }
+        // Handle hash-based routing
+        else if (hash && hash.includes("privacy-policy")) {
+          sessionStorage.redirect = "/privacy-policy";
+        }
+        // Handle encoded hash in pathname
+        else if (path.includes("%23/")) {
+          sessionStorage.redirect = path.replace("%23/", "");
+        }
+        // Default case
+        else {
+          sessionStorage.redirect = path;
+        }
+
+        location.href = "/";
+      })();
     </script>
   </head>
 </html>
