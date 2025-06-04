@@ -170,7 +170,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        /* Consent Checkbox */}
+        {/* Consent Checkbox */}
         <div className="mt-4 flex items-start space-x-2">
           <input
             type="checkbox"
@@ -187,15 +187,11 @@ export default function Contact() {
             <a href="/privacy-policy" className="text-blue-500 underline">
               Privacy Policy
             </a>{" "}
-            and{" "}
-            <a href="/privacy-policy" className="text-blue-500 underline">
-              Terms and Conditions
-            </a>
-            . Text "HELP" for help or contact us at info@voltaicnow.com. Text
-            "STOP" to cancel.
+            and . Text "HELP" for help or contact us at info@voltaicnow.com.
+            Text "STOP" to cancel.
           </label>
         </div>
-        {/* Submit Button - Disabled until checkbox is checked */}}
+        {/* Submit Button - Disabled until checkbox is checked */}
         <div className="mt-10">
           <button
             type="submit"
