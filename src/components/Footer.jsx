@@ -6,8 +6,8 @@ export default function Footer() {
     <footer className="bg-gray-50 w-full">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         {/* Footer Content Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
-          {/* Branding Section */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+          {/* Branding and Contact Section */}
           <div className="space-y-6">
             <Link to="/" className="block">
               <img
@@ -16,11 +16,10 @@ export default function Footer() {
                 className="w-48 h-auto object-contain"
               />
             </Link>
-            <div className="text-gray-500 space-y-2 text-left">
-              <p className="text-base">
-                Expert HVAC solutions for California homeowners.
-              </p>
-              <p className="text-base">CSLB #1096383 Voltaic Constructon</p>
+            <div className="text-gray-500 text-base space-y-2">
+              <p>Expert HVAC solutions for California homeowners.</p>
+              <p>CSLB #1096383 - Voltaic Construction</p>
+              <p>13230 E IMPERIAL HWY # 300 BREA, CA 92821-6751</p>
               <p>
                 <a
                   href="tel:8776468658"
@@ -42,7 +41,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to="/services"
-                    className="text-base text-gray-600 transition-colors hover:text-gray-900"
+                    className="text-base text-gray-600 hover:text-gray-900 transition"
                   >
                     Services
                   </Link>
@@ -50,7 +49,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to="/maintenance"
-                    className="text-base text-gray-600 transition-colors hover:text-gray-900"
+                    className="text-base text-gray-600 hover:text-gray-900 transition"
                   >
                     Maintenance
                   </Link>
@@ -58,7 +57,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to="/installation"
-                    className="text-base text-gray-600 transition-colors hover:text-gray-900"
+                    className="text-base text-gray-600 hover:text-gray-900 transition"
                   >
                     Installation
                   </Link>
@@ -73,7 +72,7 @@ export default function Footer() {
                 <li>
                   <Link
                     to="/contact"
-                    className="text-base text-gray-600 transition-colors hover:text-gray-900"
+                    className="text-base text-gray-600 hover:text-gray-900 transition"
                   >
                     Contact
                   </Link>
@@ -81,24 +80,10 @@ export default function Footer() {
               </ul>
             </div>
           </div>
-
-          {/* Financing Ad - Positioned on the Right */}
-          {/* <div className="flex justify-end">
-            <a
-              href="https://www.synchrony.com/mmc/W3234733802"
-              className="block w-52"
-            >
-              <img
-                alt="Flexible financing available through Synchrony"
-                src="https://www.synchronybusiness.com/mmc/assets/hms-0506_marketingrepositoryad2_160x600_final.jpg"
-                className="w-full h-auto rounded-lg shadow-lg"
-              />
-            </a>
-          </div> */}
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-8 border-t border-gray-200 pt-6">
+        <div className="mt-12 border-t border-gray-200 pt-6">
           <p className="text-center text-sm text-gray-500">
             &copy; 2024 mintair.co. All rights reserved. | Powered by Voltaic
           </p>

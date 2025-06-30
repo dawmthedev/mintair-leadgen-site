@@ -15,8 +15,8 @@ export default function Contact() {
 
   const API_URL =
     process.env.NODE_ENV === "development"
-      ? "https://mintbackendfinal.vercel.app/api/contact"
-      : "https://mintbackendfinal.vercel.app/api/contact";
+      ? "https://mintbackendfinal.vercel.app/api/contac"
+      : "https://mintbackendfinal.vercel.app/api/contac";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
