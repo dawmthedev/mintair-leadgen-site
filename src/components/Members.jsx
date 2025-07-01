@@ -1,7 +1,7 @@
 import React from "react";
 
 const teamMembers = [
-  "vinny",
+  "Vinny",
   "Remy",
   "Jake",
   "Bryce",
